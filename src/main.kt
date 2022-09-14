@@ -9,7 +9,7 @@ fun main(){
     ValueFirst = readLine()!!.toDouble()
     println("Введите второе число")
     ValueSecond = readLine()!!.toDouble()
-    println("Выберите действие \n1-сложение \n2-вычитание")
+    println("Выберите действие \n1-сложение \n2-вычитание\n 3-умножение \n4-деление")
     action = readLine().toString()
 
     when(action){
@@ -21,6 +21,15 @@ fun main(){
         {
             println("Результат: ${calc.subtraction(ValueFirst,ValueSecond)}" )
         }
+        "3"->
+        {
+            println("Результат: ${calc.multiplication(ValueFirst,ValueSecond)}" )
+        }
+        "4"->
+        {
+          println(  calc.division(ValueFirst, ValueSecond ))
+        }
+
         else -> println("Не правильно выбранно действие")
     }
 
