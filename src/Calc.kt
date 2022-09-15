@@ -1,5 +1,5 @@
 package  calc
-public class Calc  {
+class Calc  {
   public  fun  add(ValueFirst : Double, valueSecond : Double) : Double{
        return  ValueFirst + valueSecond
     }
